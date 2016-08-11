@@ -1,0 +1,35 @@
+
+
+
+/* ROUNDED GRAPHIC STYLE */
+
+.circle__border{
+    position: relative;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+
+    background-image:
+        linear-gradient(180deg, transparent 50%, $main-color-green 50%),
+        linear-gradient(270deg, $main-color-green 50%, #ededed 50%);
+}
+
+.circle__inner{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    border-radius: 50%;
+  
+    background: #fff;
+}
+
+.circle__percent{
+    top: 30px;
+    font-size: 44px;
+    font-weight: 200;
+}

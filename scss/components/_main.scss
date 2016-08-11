@@ -1,0 +1,43 @@
+
+
+
+/* MAIN SETTINGS */
+
+* {
+	// outline: 1px solid red;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: $main-font-color;
+}
+
+a {
+	text-decoration: none;
+	color: $main-font-color;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.float-left {
+	float: left;
+}
+
+.wrapper {
+	width: 1600px;
+	margin: 0 auto;
+}
+
+/* Switches and checkpoints grouped in divs */
+.group {
+	float: left;
+	margin-left: 40px;
+	height: 135px;
+	width: 100px;
+
+	&:last-child {
+		margin-left: 100px;
+	}
+}

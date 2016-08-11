@@ -1,0 +1,125 @@
+
+
+/* BASIC SWITCH STYLE  */
+
+input[type='checkbox'],
+input[type='radio'] {
+    visibility: hidden;
+}
+
+.checkbox,
+.radiobutton {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
+    margin-bottom: 30px;
+
+    background:$main-color-red;
+    z-index: 1;
+}
+
+
+
+/* LABEL STYLE  */
+
+.checkbox:before, .radiobutton:before,
+.checkbox:after, .radiobutton:after {
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+    z-index: 2;
+    color: #fff;
+
+}
+.checkbox:before,
+.radiobutton:before {
+	left: 0;
+}
+.checkbox:after,
+.radiobutton:after {
+	right: 0;
+}
+
+.radiobutton {
+
+    &:before {
+        content: 'on';
+    }
+
+    &:after {
+        content: 'off';
+    } 
+}
+
+.checkbox {
+
+    &:before {
+        font-family: $global-font-icon;
+        content: $icon-yes;
+        font-size: 32px;
+    }
+
+    &:after {
+        font-family: $global-font-icon;
+        content: $icon-no;
+        font-size: 30px;
+    } 
+}
+
+
+
+/* SWITCH OFF */
+
+.checkbox label,
+.radiobutton label {
+	position: absolute;
+	display: block;
+    top: 4px;
+	left: 4px;
+    height: 42px;
+    width: 42px;
+
+	background: #fff;
+	cursor: pointer;
+	transition: all .4s ease-in-out;
+    z-index: 3;
+}
+
+
+
+
+/* SWITCH ON */
+
+.checkbox input[type='checkbox']:checked + label,
+.radiobutton input[type='radio']:checked + label{
+	transform: translate3d(50px,0,0);
+}
+
+[type='checkbox']:checked + .checkbox {
+    background: $main-color-green;
+}
+
+
+
+/* SWITCH ROUNDED */
+
+.radiobutton[data-style='rounded'],
+.radiobutton[data-style='rounded'] label {
+	border-radius: 50px;
+}
+
+
+
+/* SWITCH SQUARE */
+
+.checkbox[data-style='square'],
+.checkbox[data-style='square'] label {
+	 border-radius: 5px;
+}

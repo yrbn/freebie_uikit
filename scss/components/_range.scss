@@ -1,0 +1,98 @@
+
+/* RANGES STYLE */
+
+
+.ranges {
+    margin: 200px 20px 55px;
+}
+
+.range {
+    position: relative; 
+    margin: 85px auto;
+    height: 10px;
+    cursor: pointer;
+    background: #ededed;
+    border-radius: 5px;
+       
+    &:after {
+        position: absolute;
+        content: '';
+        top: -10px;
+        border: 8px solid;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background: transparent;
+        cursor: pointer;
+        }
+}
+
+.range-1 { 
+    width: 455px;
+    
+  &:after {
+        left: 135px;
+        border-color: $main-color-blue;
+  }
+}
+  
+.range1__value { 
+    position: absolute;
+    background: $main-color-blue;
+    width: 60px; 
+    height: 40px; 
+    line-height: 40px;
+    text-align: center; 
+    color: #fff; 
+    border-radius: 5px; 
+    display: inline-block; 
+    top: -60px;
+    left: 122px;
+  
+    &:after { 
+        content: "";
+        position: absolute; 
+        border-top: 8px solid $main-color-blue;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: 100%;
+        left: 35%;
+    }
+}
+
+.range-2 { 
+    width: 455px;
+    background-image: linear-gradient(to right, transparent 70px, $main-color-green 70px, 335px, transparent 60%);
+  
+    &:after {
+        left: 45px;
+        border-color: $main-color-green;
+    }
+  
+    &:before {
+        position: absolute;
+        content: '';
+        left: 330px;
+        top: -10px;
+        border: 8px solid;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background: transparent;
+        cursor: pointer;
+        border-color: $main-color-green;
+    }
+}
+
+.range-3 { 
+    width: 380px;
+    background-image: linear-gradient(to right, $main-color-orange 295px, transparent 75%);
+    
+    &:after {
+        left: 290px;
+        border-color: $main-color-orange;
+    }
+}
+
+
+

@@ -1,0 +1,75 @@
+
+
+
+/* DIV WITH ACTORS STYLED */
+
+.actor {
+	position: relative;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+	margin: 50px 0;
+	padding: 0 25px;
+	padding-bottom: 70px;
+
+	h1 {
+		font-size: 34px;
+		color: #333333;
+		font-weight: normal;
+		outline: 1px solid red;
+	}
+
+	p {
+		font-size: 26px;
+		outline: 1px solid red;
+	}
+}
+
+.actor__photo {
+	float: left;
+	margin: 25px;
+	margin-left: 0;
+	border-radius: 50%;
+}
+
+
+.actor__button {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	padding: 15px 0;
+	font-size: 28px;
+	text-align: center;
+	color: #fff;
+
+	&:hover {
+		opacity: 0.75;
+	}
+
+	.icon {
+		display: inline-block;
+		padding: 0;
+		font-size: 30px;
+		outline: 1px solid red;
+	}
+}
+
+.button--fav {
+	left: 0;
+	width: 33%;
+	border-radius: 0 0 0 5px;
+	background:$main-color-green;
+}
+
+.button--friends {
+	left: 33.1%;
+	width: 33.3%;
+	background:$main-color-red;
+
+}
+
+.button--views {
+	right: 0;
+	width: 33.3%;
+	border-radius: 0 0 5px 0;
+	background:$main-color-blue;
+}

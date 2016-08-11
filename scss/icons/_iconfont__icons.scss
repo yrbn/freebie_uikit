@@ -1,0 +1,80 @@
+@font-face {
+  font-family: $global-font-icon;
+  src:url("../fonts/iconsfont..eot");
+  src:url("../fonts/iconsfont.?#iefix") format("embedded-opentype"),
+    url("../fonts/iconsfont.woff") format("woff"),
+    url("../fonts/iconsfont.ttf") format("truetype"),
+    url("../fonts/iconsfont.#iconsfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: $global-font-icon;
+
+  &:before {
+    /* Some common icon stuff */
+  }
+
+  &.-bell {
+    &:before {
+      content: $icon-bell;
+    }
+  }
+  &.-comment {
+    &:before {
+      content: $icon-comment;
+    }
+  }
+  &.-fav {
+    &:before {
+      content: $icon-fav;
+    }
+  }
+  &.-friends {
+    &:before {
+      content: $icon-friends;
+    }
+  }
+  &.-left_arrow {
+    &:before {
+      content: $icon-left_arrow;
+    }
+  }
+  &.-lens {
+    &:before {
+      content: $icon-lens;
+    }
+  }
+  &.-login {
+    &:before {
+      content: $icon-login;
+    }
+  }
+  &.-no {
+    &:before {
+      content: $icon-no;
+    }
+  }
+  &.-password {
+    &:before {
+      content: $icon-password;
+    }
+  }
+  &.-right_arrow {
+    &:before {
+      content: $icon-right_arrow;
+    }
+  }
+  &.-views {
+    &:before {
+      content: $icon-views;
+    }
+  }
+  &.-yes {
+    &:before {
+      content: $icon-yes;
+    }
+  }
+
+}

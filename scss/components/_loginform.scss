@@ -1,0 +1,114 @@
+
+
+
+/* LOGIN FORM STYLE */
+
+.login {
+	width: 455px;
+	margin: 55px 40px;
+
+	h2 { 
+		font-size: 26px;
+	}
+}
+
+.login__header {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.login__header {
+	background: #f6f5f6;
+	padding: 20px 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $main-font-color;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px 5px 0 0;
+}
+
+.login__container {
+
+	position: relative;
+	background: #fff;
+	border: 1px solid #c7c6cb;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+	padding: 40px 40px 50px;
+	overflow: hidden;
+	
+	.icon {
+		position: absolute;
+		font-size: 40px;
+		left: 55px;
+		color: #cccccc;
+	}
+	.-login {
+		top: 55px;
+	}
+
+	.-password {
+		top: 140px;
+	}
+ }
+
+.login__email,
+.login__password,
+.login__submit {
+	box-sizing: border-box;
+	display: block;  
+	outline: 0;
+	border-radius: 5px;
+	font-size: 26px;
+	border: 1px solid #d5d5d5;
+}
+
+.login__email,
+.login__password {
+	position: relative;
+	width: 100%;
+	padding: 20px 70px;
+	color: #333333;
+}
+
+.login__password {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.login__submit {
+	padding: 20px 55px;
+	float: right;
+	background: $main-color-blue;
+	border-color: transparent;
+	color: #fff;
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #cccccc;
+}
+
+
+.login__email:focus,
+.login__password:focus {
+	border-color: $main-color-blue;
+}
+
+.login__email:focus + .-login {
+	color: $main-color-blue;
+}
+
+.login__password:focus + .-password {
+	color: $main-color-blue;
+}
+
+.login input[type="submit"]:hover {
+	background: #4188c4;
+}
+
+.login__submit:focus {
+	position: relative;
+	top: 1px;
+	left: 1px;
+}

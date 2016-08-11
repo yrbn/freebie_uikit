@@ -1,0 +1,98 @@
+
+
+
+/* HEADER STYLE */
+
+header{
+	height: 120px;
+	line-height: 120px;
+	padding-top: 0.5rem;
+	border-bottom: 1px solid #e5e5e5;
+	vertical-align: middle;
+	font-size: 30px;
+		
+	background: #fafafa linear-gradient(to right, $main-color-blue 0, 25%,  
+		$main-color-red 25%, 50%, $main-color-orange 50%, 75%, $main-color-green 75%
+    ) 1.25rem 0 / 65% 0.5rem repeat-x;
+}
+
+.header__nav {
+	float: left;
+	padding: 0 40px;
+	
+	a {
+		margin-left: 60px;
+
+		&:first-child {
+			margin: 0;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.headerSearch {
+	position: relative;
+	overflow: hidden;
+
+	padding: 30px 40px 20px;
+	line-height: 0;
+}
+	
+.headerSearch__input {
+	height: 0;
+	width: 420px;
+	padding: 30px 18px;
+	outline: 0;
+	border: 1px solid #d5d5d5;
+	border-radius: 5px;
+	color: #d5d5d5;
+
+	&:focus {
+		color: #000;
+		border-color: $main-font-color;
+	}
+}
+
+.headerSearch__submit {
+	position: absolute;
+	right: 25px;
+	top: 45px;
+
+	width: 35px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+
+	font-size: 35px;
+	color: #d5d5d5;
+	background:transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+
+	&:hover {
+		color: $main-font-color;
+	}
+}
+
+.header__profile {
+	float: right;
+	padding: 0 40px;
+
+	a {
+		margin: 20px;
+		font-size: 40px;
+		color: #cccccc;
+
+		&:hover {
+			color: $main-font-color;
+		}
+	}
+
+	img {
+		border-radius: 50%;
+	}
+}
