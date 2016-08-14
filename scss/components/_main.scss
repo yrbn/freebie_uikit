@@ -33,9 +33,17 @@ ul {
 /* Switches and checkpoints grouped in divs */
 .group {
 	float: left;
-	margin-left: 40px;
 	height: 135px;
 	width: 100px;
+	margin-left: 50px;
+
+	&:first-child {
+		margin-left: 40px;
+	}
+
+	&:nth-child(6) {
+		margin-left: 180px;
+	}
 
 	&:last-child {
 		margin-left: 100px;

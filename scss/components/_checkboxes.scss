@@ -6,9 +6,9 @@
     position: relative;
     margin: 20px;
     margin-left: 50px;
+    margin-top: 10px;
 
-
-    label {
+    .checkbox-label {
         width: 30px;
         height: 30px;
         cursor: pointer;
@@ -21,6 +21,14 @@
             border: 1px solid $main-color-green;
         }
     }
+
+    .checkbox-text {
+        position: absolute;
+        font-size: 26px;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+
 
     [type=checkbox] {
         visibility: hidden;
@@ -40,7 +48,7 @@
 
 /* SQUARE CHECKBOX STYLE  */
 
-.checkboxes--squared label{
+.checkboxes--squared .checkbox-label {
     border-radius: 5px;
 
     &:after {
@@ -63,6 +71,7 @@
 /* ROUNDED CHECKBOX STYLE  */
 
 .checkboxes--rounded label{
+    margin-top: 40px;
     border-radius: 50%;
 
     &:after {

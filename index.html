@@ -51,68 +51,70 @@
             <div class="col-12">
                 
                 <div class="group">
-                    <div class="checkbox" data-style="square" data-label="on-off">
+                    <div class="switch-checkbox" data-style="square" data-label="on-off">
                         <input type="checkbox" id="cb-1" checked>
                         <label class="label" for="cb-1"></label>
                     </div>
                     
-                    <div class="checkbox" data-style="square" data-label="on-off">
+                    <div class="switch-checkbox" data-style="square" data-label="on-off">
                         <input type="checkbox" id="cb-2">
                         <label class="label" for="cb-2"></label>
                     </div>
                 </div>
 
                 <div class="group">
-                    <div class="radiobutton" data-style="rounded" data-label="on-off">
+                    <div class="switch-radiobutton" data-style="rounded" data-label="on-off">
                         <input type="radio" id="rb-1" name="rb" checked>
                         <label class="label" for="rb-1"></label>
                     </div>
                     
-                    <div class="radiobutton" data-style="rounded" data-label="on-off">
+                    <div class="switch-radiobutton" data-style="rounded" data-label="on-off">
                         <input type="radio" id="rb-2" name="rb">
                         <label class="label" for="rb-2"></label>
                     </div>
                 </div>
 
                 <div class="group">
+                
                     <div class="checkboxes checkboxes--squared">
                         <input type="checkbox" value="None" id="cb-3" name="check">
-                        <label for="cb-3"></label>
-                    </div>   
+                        <label for="cb-3" class="checkbox-label"></label>
+                        <label for="cb-3" class="checkbox-text">Default</label>
+                    </div>  
+
+                    <div class="checkboxes checkboxes checkboxes--rounded">
+                        <input type="checkbox" value="None" id="cb-6" name="check">
+                        <label for="cb-6" class="checkbox-label"></label>
+                        <label for="cb-6" class="checkbox-text">Default</label>
+                    </div>
                 </div>
 
                 <div class="group">
+
                     <div class="checkboxes checkboxes--squared">
                         <input type="checkbox" value="None" id="cb-4" name="check">
-                        <label for="cb-4"></label>
+                        <label for="cb-4" class="checkbox-label"></label>
+                        <label for="cb-4" class="checkbox-text">Hover</label>
                     </div>   
+
+                    <div class="checkboxes checkboxes checkboxes--rounded">
+                        <input type="checkbox" value="None" id="cb-7" name="check">
+                        <label for="cb-7" class="checkbox-label"></label>
+                        <label for="cb-7" class="checkbox-text">Hover</label>
+                    </div>
                 </div>
 
                 <div class="group">
                     <div class="checkboxes checkboxes--squared">
                         <input type="checkbox" value="None" id="cb-5" name="check" checked>
-                        <label for="cb-5"></label>
-                    </div>   
-                </div>
+                        <label for="cb-5" class="checkbox-label"></label>
+                        <label for="cb-5" class="checkbox-text">Selected</label>
+                    </div>  
 
-                <div class="group">
-                    <div class="checkboxes checkboxes checkboxes--rounded">
-                        <input type="checkbox" value="None" id="cb-6" name="check">
-                        <label for="cb-6"></label>
-                    </div>   
-                </div>
-
-                <div class="group">
-                    <div class="checkboxes checkboxes checkboxes--rounded">
-                        <input type="checkbox" value="None" id="cb-7" name="check">
-                        <label for="cb-7"></label>
-                    </div>   
-                </div>
-
-                <div class="group">
                     <div class="checkboxes checkboxes checkboxes--rounded">
                         <input type="checkbox" value="None" id="cb-8" name="check" checked>
-                        <label for="cb-8"></label>
+                        <label for="cb-8" class="checkbox-label"></label>
+                        <label for="cb-8" class="checkbox-text">Selected</label>
                     </div>
                 </div>
 
@@ -154,7 +156,7 @@
 
                 </div>
 
-                <div class="select">
+                <div class="select" style="z-index: 10">
 
                     <input class="select__input" id="select-1" type="checkbox" name="menu">
                     <div class="select__header">Select Something</div>
@@ -290,7 +292,7 @@
 
                 <div class="video">
                     
-                    <img class="video__controls" src="../img/controls.png" alt="controls">
+                    <iframe src="https://www.youtube.com/embed/i-80SGWfEjM" frameborder="0" allowfullscreen></iframe>
 
                 </div>
 

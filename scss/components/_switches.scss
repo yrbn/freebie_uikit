@@ -2,13 +2,13 @@
 
 /* BASIC SWITCH STYLE  */
 
-input[type='checkbox'],
-input[type='radio'] {
+.switch-checkbox [type='checkbox'],
+.switch-radiobutton [type='radio'] {
     visibility: hidden;
 }
 
-.checkbox,
-.radiobutton {
+.switch-checkbox,
+.switch-radiobutton {
     display: inline-block;
     position: relative;
     height: 50px;
@@ -24,8 +24,8 @@ input[type='radio'] {
 
 /* LABEL STYLE  */
 
-.checkbox:before, .radiobutton:before,
-.checkbox:after, .radiobutton:after {
+.switch-checkbox:before, .switch-radiobutton:before,
+.switch-checkbox:after, .switch-radiobutton:after {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -38,16 +38,16 @@ input[type='radio'] {
     color: #fff;
 
 }
-.checkbox:before,
-.radiobutton:before {
+.switch-checkbox:before,
+.switch-radiobutton:before {
 	left: 0;
 }
-.checkbox:after,
-.radiobutton:after {
+.switch-checkbox:after,
+.switch-radiobutton:after {
 	right: 0;
 }
 
-.radiobutton {
+.switch-radiobutton {
 
     &:before {
         content: 'on';
@@ -58,7 +58,7 @@ input[type='radio'] {
     } 
 }
 
-.checkbox {
+.switch-checkbox {
 
     &:before {
         font-family: $global-font-icon;
@@ -77,8 +77,8 @@ input[type='radio'] {
 
 /* SWITCH OFF */
 
-.checkbox label,
-.radiobutton label {
+.switch-checkbox label,
+.switch-radiobutton label {
 	position: absolute;
 	display: block;
     top: 4px;
@@ -97,12 +97,12 @@ input[type='radio'] {
 
 /* SWITCH ON */
 
-.checkbox input[type='checkbox']:checked + label,
-.radiobutton input[type='radio']:checked + label{
+.switch-checkbox [type='checkbox']:checked + label,
+.switch-radiobutton [type='radio']:checked + label{
 	transform: translate3d(50px,0,0);
 }
 
-[type='checkbox']:checked + .checkbox {
+.switch-checkbox [type='checkbox']:checked {
     background: $main-color-green;
 }
 
@@ -110,8 +110,8 @@ input[type='radio'] {
 
 /* SWITCH ROUNDED */
 
-.radiobutton[data-style='rounded'],
-.radiobutton[data-style='rounded'] label {
+.switch-radiobutton[data-style='rounded'],
+.switch-radiobutton[data-style='rounded'] label {
 	border-radius: 50px;
 }
 
@@ -119,7 +119,7 @@ input[type='radio'] {
 
 /* SWITCH SQUARE */
 
-.checkbox[data-style='square'],
-.checkbox[data-style='square'] label {
+.switch-checkbox[data-style='square'],
+.switch-checkbox[data-style='square'] label {
 	 border-radius: 5px;
 }
