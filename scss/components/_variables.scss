@@ -1,0 +1,18 @@
+$global-font-icon: 'myfont';
+$main-font-color: #777777;
+$main-color-red: #ff7f68;
+$main-color-orange: #ffa940;
+$main-color-green: #a9cf55;
+$main-color-blue: #4e90c7;
+
+
+@mixin calendar-active-days {
+	box-shadow: 5px 0 0 $main-color-red,
+	        	10px 0 0 $main-color-red,
+		        15px 0 0 $main-color-red,
+		        20px 0 0 $main-color-red,
+		        25px 0 0 $main-color-red,
+		        30px 0 0 $main-color-red,
+		        35px 0 0 $main-color-red,
+		        40px 0 0 $main-color-red;
+}

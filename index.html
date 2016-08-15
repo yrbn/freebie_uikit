@@ -17,6 +17,9 @@
         <div class="row">
             <div class="col-12">
                 
+
+                <!-- HEADER -->
+
                 <header>
 
                     <nav class="header__nav">
@@ -42,7 +45,7 @@
                         </form>
                     </div>
 
-                </header>
+                </header> <!-- End header -->
 
             </div>
         </div>
@@ -50,29 +53,47 @@
         <div class="row">
             <div class="col-12">
                 
+
+
+                <!-- SWITCHES -->
+
                 <div class="group">
-                    <div class="switch-checkbox" data-style="square" data-label="on-off">
-                        <input type="checkbox" id="cb-1" checked>
-                        <label class="label" for="cb-1"></label>
-                    </div>
-                    
-                    <div class="switch-checkbox" data-style="square" data-label="on-off">
-                        <input type="checkbox" id="cb-2">
-                        <label class="label" for="cb-2"></label>
+                    <div class='switch-round'>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <div class="switch-slider slider--rounded">
+                                <span class='switch-on'>on</span>
+                                <span class='switch-off'>off</span>
+                            </div>
+                        </label>
+    
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <div class="switch-slider slider--rounded">
+                                <span class='switch-on'>on</span>
+                                <span class='switch-off'>off</span>
+                            </div>
+                        </label>
                     </div>
                 </div>
 
                 <div class="group">
-                    <div class="switch-radiobutton" data-style="rounded" data-label="on-off">
+                    <div class='switch-square'>
+                        <label class="switch">
+                        <input type="radio" id="rb-1" name="rb">
+                        <div class="switch-slider"></div>
+                    </label>
+
+                    <label class="switch">
                         <input type="radio" id="rb-1" name="rb" checked>
-                        <label class="label" for="rb-1"></label>
-                    </div>
-                    
-                    <div class="switch-radiobutton" data-style="rounded" data-label="on-off">
-                        <input type="radio" id="rb-2" name="rb">
-                        <label class="label" for="rb-2"></label>
+                        <div class="switch-slider"></div>
+                        </label>
                     </div>
                 </div>
+
+
+
+                <!-- CHECKBOXES -->
 
                 <div class="group">
                 
@@ -118,6 +139,9 @@
                     </div>
                 </div>
 
+                
+
+                <!-- GRAPHS -->
 
                 <div class="group">
                     <div class="circle">
@@ -141,6 +165,10 @@
 
         <div class="row">
             <div class="col-4">
+
+
+
+                <!-- LOGIN FORM -->
 
                 <div class="login">
   
@@ -169,6 +197,10 @@
 
                 </div>
 
+
+
+                <!-- DROPDOWN LIST -->
+
                 <div class="select">
 
                     <input class="select__input" id="select-2" type="checkbox" name="menu" checked>
@@ -185,6 +217,10 @@
             </div>
                 
             <div class="col-4">
+
+
+
+                <!-- CALENDAR -->
 
                 <div class="calendar">
                     
@@ -222,16 +258,16 @@
                         <li>12</li>
                         <li>13</li>
                         <li>14</li>
-                        <li class="--active">15</li>
-                        <li>16</li>
-                        <li>17</li>
-                        <li>18</li>
-                        <li>19</li>
-                        <li>20</li>
-                        <li>21</li>
-                        <li>22</li>
-                        <li>23</li>
-                        <li>24</li>
+                        <li class="calendar--active-first">15</li>
+                        <li class="calendar--active">16</li>
+                        <li class="calendar--active">17</li>
+                        <li class="calendar--active">18</li>
+                        <li class="calendar--active">19</li>
+                        <li class="calendar--active">20</li>
+                        <li class="calendar--active">21</li>
+                        <li class="calendar--active">22</li>
+                        <li class="calendar--active">23</li>
+                        <li class="calendar--active-last">24</li>
                         <li>25</li>
                         <li>26</li>
                         <li>27</li>
@@ -243,6 +279,10 @@
                     </ul>
 
                 </div>
+
+
+
+                <!-- ACTORS DIV  -->
 
                 <div class="actor">
                     
@@ -274,22 +314,55 @@
             </div>
 
             <div class="col-4">
+
+
+
+                <!-- SLIDERS -->
                 
-                <div class="ranges">
-                    <div class="range range-1">
-                        <div class="range1__value">30</div>
+                <div class="sliders">
+                    <div id="my-slider-1" se-min="0" se-step="1" se-max="100" class="slider1">
+                        <div class="slider1__thumb">
+                            <span></span>
+                            <div class="slider1__value">30</div>
+                        </div>
+                        <div class="slider1__line">
+                            <span></span>
+                        </div>
                     </div>
                     
-                    <div class="range range-2">
+                    <div id="my-slider-2" se-min="0" se-step="1" se-max="100" class="slider2">
+                        <div class="slider2__left-thumb">
+                            <span></span>
+                        </div>
+                        <div class="slider2__right-thumb">
+                            <span></span>
+                        </div>
+                        <div class="slider2__line">
+                            <span></span>
+                        </div>
+                        <span class="slider2__value">0</span>
+                        <span class="slider2__value">25</span>
+                        <span class="slider2__value">50</span>
+                        <span class="slider2__value">75</span>
+                        <span class="slider2__value">100</span>
                     </div>
                     
-                    <div class="range range-3">
-                        <span>0%</span>
-                        <span>100%</span>
+                    <div id="my-slider-3" se-min="0" se-step="1" se-max="100" class="slider3">
+                        <span class="slider3__minvalue">0%</span>
+                        <div class="slider3__thumb">
+                            <span></span>
+                        </div>
+                        <div class="slider3__line">
+                            <span></span>
+                        </div>
+                        <span class="slider3__maxvalue">100%</span>
                     </div>
                 </div>
 
 
+
+                <!-- VIDEO BLOCK -->
+            
                 <div class="video">
                     
                     <iframe src="https://www.youtube.com/embed/i-80SGWfEjM" frameborder="0" allowfullscreen></iframe>
@@ -300,6 +373,8 @@
         </div>
     </div>
     
+
+    <script src="js/slider2.js"></script>
 </body>
 
 </html>

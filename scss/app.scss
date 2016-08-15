@@ -1,11 +1,5 @@
-$global-font-icon: 'myfont';
-$main-font-color: #777777;
-$main-color-red: #ff7f68;
-$main-color-orange: #ffa940;
-$main-color-green: #a9cf55;
-$main-color-blue: #4e90c7;
 
-
+@import 'components/variables.scss';
 @import 'icons/icons';
 @import 'components/grid.scss';
 @import 'components/main.scss';
@@ -17,6 +11,6 @@ $main-color-blue: #4e90c7;
 @import 'components/dropmenu.scss';
 @import 'components/calendar.scss';
 @import 'components/actordiv.scss';
-@import 'components/range.scss';
+@import 'components/sliders.scss';
 @import 'components/videodiv.scss';
 

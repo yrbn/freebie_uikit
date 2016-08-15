@@ -47,7 +47,7 @@
     margin: 0;    
     padding: 10px 0;
     padding-left: 15px;
-    background-color:#ffffff;
+    background-color:#fff;
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
 
@@ -67,6 +67,7 @@
     overflow: hidden;
 
     li {
+        position: relative;
         display: block;
         float: left;
         width: 50px;
@@ -78,7 +79,7 @@
         border: 1px solid #dddddd;
         border-radius: 50%;
         cursor: pointer;
-
+   
         &:empty {
             background:#f2f2f2;
         }
@@ -88,14 +89,46 @@
             color: #fff;
         }
 
-        &.--active {
-            border-color: $main-color-red;
-            color: $main-color-red;
 
-            &:hover {
-                color: #fff;
-            }
+    }
+
+    .calendar--active-first {
+        @include calendar-active-days;
+    }
+
+    .calendar--active {
+        @include calendar-active-days;
+        color: #fff;
+        background: $main-color-red;
+        border-color: $main-color-red;
+        border-radius: 0;
+        
+        &:hover {
+
+            background: #fff;
+            color: $main-font-color;
         }
+
+        &:last-child {
+            box-shadow: 60px 0 0 red;
+        }
+    }
+
+
+    li:nth-of-type(7n + 1) {
+        border-radius:  50%;
+    }
+
+    li:nth-of-type(7n) {
+        box-shadow: none;
+        border-radius: 50%;
+    }
+
+    .calendar--active-first,
+    .calendar--active-last {
+        border-color: $main-color-red;
+        color: $main-color-red;
+        background-color: #fff;
     }
 }
 
