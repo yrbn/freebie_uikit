@@ -1,9 +1,9 @@
 var gulp         = require('gulp'),
     postcss      = require('gulp-postcss'),
     sass         = require('gulp-sass'),
+    sourcemaps   = require('gulp-sourcemaps'),
     autoprefixer = require('autoprefixer'),
     browser      = require('browser-sync'),
-    sourcemaps   = require('gulp-sourcemaps'),
     iconfont     = require('gulp-iconfont'),
     consolidate  = require('gulp-consolidate');
 

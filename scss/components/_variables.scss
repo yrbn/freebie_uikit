@@ -4,6 +4,8 @@ $main-color-red: #ff7f68;
 $main-color-orange: #ffa940;
 $main-color-green: #a9cf55;
 $main-color-blue: #4e90c7;
+$main-color-white: #fff;
+$radius-circle: 50%;
 
 
 @mixin calendar-active-days {
@@ -16,3 +18,5 @@ $main-color-blue: #4e90c7;
 		        35px 0 0 $main-color-red,
 		        40px 0 0 $main-color-red;
 }
+
+

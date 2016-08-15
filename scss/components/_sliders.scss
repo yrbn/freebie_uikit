@@ -1,14 +1,10 @@
 
-/* RANGES STYLE */
+/* SLIDERS STYLE */
 
 
 .sliders {
     margin: 170px 20px 55px;
 }
-
-
-
-
 
 .slider1 {
   
@@ -35,7 +31,7 @@
             height: 100%;
             background: transparent;
             border: 7px solid $main-color-blue;
-            border-radius: 50%;
+            border-radius: $radius-circle;
         }
 
         .slider1__value { 
@@ -45,7 +41,7 @@
             height: 40px; 
             line-height: 40px;
             text-align: center; 
-            color: #fff; 
+            color: $main-color-white; 
             border-radius: 5px; 
             display: inline-block; 
             top: -50px;
@@ -109,7 +105,7 @@
             height: 100%;
             background: transparent;
             border: 7px solid $main-color-green;
-            border-radius: 50%;
+            border-radius: $radius-circle;
         }
     }
 
@@ -176,7 +172,7 @@
             height: 100%;
             background: transparent;
             border: 7px solid $main-color-orange;
-            border-radius: 50%;
+            border-radius: $radius-circle;
         }
     }
 

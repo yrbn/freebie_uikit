@@ -50,8 +50,8 @@
 .select__input:checked ~ label {
 	border: 1px solid #c9c9c9;
 	border-radius: 5px 5px 0 0;
-	border-bottom: 1px solid #fff;
-	background: #fff;
+	border-bottom: 1px solid $main-color-white;
+	background: $main-color-white;
 
 	&:after {
 		transform: rotate(180deg);
@@ -68,7 +68,7 @@
 	top: 95%;
 	display: none;
 
-	background:#fff;
+	background: $main-color-white;
 	border: 1px solid #c9c9c9;
 	border-radius: 0 0 5px 5px;
 	border-top: none;
@@ -94,4 +94,8 @@
 	border-radius: 5px 0 0 0;
 	border-bottom: 1px solid #c9c9c9;
 	color: #c9c9c9;
+}
+
+.select--primary {
+	z-index: 10;
 }

@@ -150,7 +150,7 @@ header {
     .header__nav a:first-child {
       margin: 0; }
     .header__nav a:hover {
-      text-decoration: underline; }
+      border-bottom: 1px solid #777777; }
 
 .headerSearch {
   position: relative;
@@ -160,7 +160,7 @@ header {
 
 .headerSearch__input {
   height: 0;
-  width: 420px;
+  width: 415px;
   padding: 30px 18px;
   outline: 0;
   border: 1px solid #d5d5d5;
@@ -191,6 +191,7 @@ header {
   float: right;
   padding: 0 40px; }
   .header__profile a {
+    position: relative;
     margin: 20px;
     font-size: 40px;
     color: #cccccc; }
@@ -198,6 +199,20 @@ header {
       color: #777777; }
   .header__profile img {
     border-radius: 50%; }
+  .header__profile .profile__notification {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    height: 30px;
+    width: 30px;
+    margin-top: 0;
+    background: #ff7f68;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    line-height: 27px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px; }
 
 /* SWITCHES STYLED */
 .switch-square {
@@ -509,6 +524,9 @@ header {
   border-bottom: 1px solid #c9c9c9;
   color: #c9c9c9; }
 
+.select--primary {
+  z-index: 10; }
+
 /* CALENDAR STYLE */
 .calendar {
   border: 1px solid #d6d6d6;
@@ -571,14 +589,21 @@ header {
     margin-bottom: 10px;
     border: 1px solid #dddddd;
     border-radius: 50%;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #fff; }
     .days li:empty {
       background: #f2f2f2; }
     .days li:hover {
       background: #ff7f68;
       color: #fff; }
+  .days .calendar--active-first,
+  .days .calendar--active-last {
+    border-color: #ff7f68;
+    color: #ff7f68; }
   .days .calendar--active-first {
     box-shadow: 5px 0 0 #ff7f68, 10px 0 0 #ff7f68, 15px 0 0 #ff7f68, 20px 0 0 #ff7f68, 25px 0 0 #ff7f68, 30px 0 0 #ff7f68, 35px 0 0 #ff7f68, 40px 0 0 #ff7f68; }
+  .days .calendar--active-last {
+    box-shadow: -10px 0 0 #ff7f68, -15px 0 0 #ff7f68; }
   .days .calendar--active {
     box-shadow: 5px 0 0 #ff7f68, 10px 0 0 #ff7f68, 15px 0 0 #ff7f68, 20px 0 0 #ff7f68, 25px 0 0 #ff7f68, 30px 0 0 #ff7f68, 35px 0 0 #ff7f68, 40px 0 0 #ff7f68;
     color: #fff;
@@ -588,18 +613,11 @@ header {
     .days .calendar--active:hover {
       background: #fff;
       color: #777777; }
-    .days .calendar--active:last-child {
-      box-shadow: 60px 0 0 red; }
   .days li:nth-of-type(7n + 1) {
     border-radius: 50%; }
   .days li:nth-of-type(7n) {
     box-shadow: none;
     border-radius: 50%; }
-  .days .calendar--active-first,
-  .days .calendar--active-last {
-    border-color: #ff7f68;
-    color: #ff7f68;
-    background-color: #fff; }
 
 /* DIV WITH ACTORS STYLED */
 .actor {
@@ -612,11 +630,9 @@ header {
   .actor h1 {
     font-size: 34px;
     color: #333333;
-    font-weight: normal;
-    outline: 1px solid red; }
+    font-weight: normal; }
   .actor p {
-    font-size: 26px;
-    outline: 1px solid red; }
+    font-size: 26px; }
 
 .actor__photo {
   float: left;
@@ -630,15 +646,16 @@ header {
   bottom: 0;
   padding: 15px 0;
   font-size: 28px;
-  text-align: center;
   color: #fff; }
   .actor__button:hover {
     opacity: 0.75; }
   .actor__button .icon {
-    display: inline-block;
-    padding: 0;
-    font-size: 30px;
-    outline: 1px solid red; }
+    display: block;
+    float: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    margin-top: -2px;
+    font-size: 34px; }
 
 .button--fav {
   left: 0;
@@ -657,7 +674,7 @@ header {
   border-radius: 0 0 5px 0;
   background: #4e90c7; }
 
-/* RANGES STYLE */
+/* SLIDERS STYLE */
 .sliders {
   margin: 170px 20px 55px; }
 

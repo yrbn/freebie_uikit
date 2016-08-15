@@ -30,7 +30,7 @@
 .login__container {
 
 	position: relative;
-	background: #fff;
+	background: $main-color-white;
 	border: 1px solid #c7c6cb;
 	border-top: none;
 	border-radius: 0 0 5px 5px;
@@ -81,7 +81,7 @@
 	float: right;
 	background: $main-color-blue;
 	border-color: transparent;
-	color: #fff;
+	color: $main-color-white;
 	cursor: pointer;
 }
 

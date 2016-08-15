@@ -8,7 +8,7 @@
     text-align: center;
     width: 160px;
     height: 160px;
-    border-radius: 50%;
+    border-radius: $radius-circle;
 
     background-image:
         linear-gradient(180deg, transparent 50%, $main-color-green 50%),
@@ -23,9 +23,9 @@
     width: 140px;
     height: 140px;
     line-height: 140px;
-    border-radius: 50%;
+    border-radius: $radius-circle;
   
-    background: #fff;
+    background: $main-color-white;
 }
 
 .circle__percent{

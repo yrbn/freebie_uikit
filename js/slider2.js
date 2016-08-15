@@ -6,19 +6,17 @@ var RangeSlider = function(id) {
 
   // retrieve touch button
   var slider     = document.getElementById(id),
-      touchLeft  = slider.querySelector('.slider2__left-thumb'),
-      touchRight = slider.querySelector('.slider2__right-thumb'),
-      lineSpan   = slider.querySelector('.slider2__line span');
+      touchLeft  = slider.querySelector('.js-slider2__left-thumb'),
+      touchRight = slider.querySelector('.js-slider2__right-thumb'),
+      lineSpan   = slider.querySelector('.js-slider2__line span');
       
   
-  // get some properties
   var min   = parseInt(slider.getAttribute('se-min')),
       max   = parseInt(slider.getAttribute('se-max'));
   
   var step  = 0.0;
   
-  if (slider.getAttribute('se-step'))
-  {
+  if (slider.getAttribute('se-step')) {
     step  = Math.abs(parseInt(slider.getAttribute('se-step')));
   }
 
@@ -50,17 +48,13 @@ var RangeSlider = function(id) {
     event.preventDefault();
     var eventTouch = event;
 
-    if (event.touches)
-    {
+    if (event.touches) {
       eventTouch = event.touches[0];
     }
     
-    if(this === touchLeft)
-    {
+    if(this === touchLeft) {
       x = touchLeft.offsetLeft;
-    }
-    else
-    {
+    } else {
       x = touchRight.offsetLeft;
     }
 
@@ -71,40 +65,29 @@ var RangeSlider = function(id) {
     document.addEventListener('touchmove', onMove);
     document.addEventListener('touchend', onStop);
     
-
   }
   
   function onMove(event) {
     var eventTouch = event;
 
-    if (event.touches)
-    {
+    if (event.touches) {
       eventTouch = event.touches[0];
     }
 
     x = eventTouch.pageX - startX;
     
-    if (selectedTouch === touchLeft)
-    {
-      if(x > (touchRight.offsetLeft - selectedTouch.offsetWidth + 10))
-      {
+    if (selectedTouch === touchLeft) {
+      if(x > (touchRight.offsetLeft - selectedTouch.offsetWidth + 10)) {
         x = (touchRight.offsetLeft - selectedTouch.offsetWidth + 10)
-      }
-      else if(x < 0)
-      {
+      } else if(x < 0) {
         x = 0;
       }
       
       selectedTouch.style.left = x + 'px';
-    }
-    else if (selectedTouch === touchRight)
-    {
-      if(x < (touchLeft.offsetLeft + touchLeft.offsetWidth - 10))
-      {
+    } else if (selectedTouch === touchRight) {
+      if(x < (touchLeft.offsetLeft + touchLeft.offsetWidth - 10)) {
         x = (touchLeft.offsetLeft + touchLeft.offsetWidth - 10)
-      }
-      else if(x > maxX)
-      {
+      } else if(x > maxX) {
         x = maxX;
       }
       selectedTouch.style.left = x + 'px';
@@ -118,14 +101,12 @@ var RangeSlider = function(id) {
     calculateValue();
     
     // call on change
-    if(slider.getAttribute('on-change'))
-    {
+    if(slider.getAttribute('on-change')) {
       var fn = new Function('min, max', slider.getAttribute('on-change'));
       fn(slider.getAttribute('se-min-value'), slider.getAttribute('se-max-value'));
     }
     
-    if(self.onChange)
-    {
+    if(self.onChange) {
       self.onChange(slider.getAttribute('se-min-value'), slider.getAttribute('se-max-value'));
     }
     
@@ -143,14 +124,12 @@ var RangeSlider = function(id) {
     calculateValue();
     
     // call did changed
-    if(slider.getAttribute('did-changed'))
-    {
+    if(slider.getAttribute('did-changed')) {
       var fn = new Function('min, max', slider.getAttribute('did-changed'));
       fn(slider.getAttribute('se-min-value'), slider.getAttribute('se-max-value'));
     }
     
-    if(self.didChanged)
-    {
+    if(self.didChanged) {
       self.didChanged(slider.getAttribute('se-min-value'), slider.getAttribute('se-max-value'));
     }
   }
@@ -164,8 +143,7 @@ var RangeSlider = function(id) {
     var maxValue = maxValue * (max - min) + min - 2;
     
     console.log(step);
-    if (step !== 0.0)
-    {
+    if (step !== 0.0) {
       var multi = Math.floor((minValue / step));
       minValue = step * multi;
       
@@ -185,8 +163,7 @@ var RangeSlider = function(id) {
   
 };
 
-// -------------------
-// How to use? 
+
 
 var newRangeSlider2 = new RangeSlider('my-slider-2');
 

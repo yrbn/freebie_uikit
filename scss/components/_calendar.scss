@@ -47,7 +47,7 @@
     margin: 0;    
     padding: 10px 0;
     padding-left: 15px;
-    background-color:#fff;
+    background-color:$main-color-white;
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
 
@@ -77,8 +77,9 @@
         margin-left: 15px;
         margin-bottom: 10px;
         border: 1px solid #dddddd;
-        border-radius: 50%;
+        border-radius: $radius-circle;
         cursor: pointer;
+        background-color: $main-color-white;
    
         &:empty {
             background:#f2f2f2;
@@ -86,50 +87,53 @@
 
         &:hover {
             background: $main-color-red;
-            color: #fff;
+            color: $main-color-white;
         }
 
 
-    }
-
-    .calendar--active-first {
-        @include calendar-active-days;
-    }
-
-    .calendar--active {
-        @include calendar-active-days;
-        color: #fff;
-        background: $main-color-red;
-        border-color: $main-color-red;
-        border-radius: 0;
-        
-        &:hover {
-
-            background: #fff;
-            color: $main-font-color;
-        }
-
-        &:last-child {
-            box-shadow: 60px 0 0 red;
-        }
-    }
-
-
-    li:nth-of-type(7n + 1) {
-        border-radius:  50%;
-    }
-
-    li:nth-of-type(7n) {
-        box-shadow: none;
-        border-radius: 50%;
     }
 
     .calendar--active-first,
     .calendar--active-last {
         border-color: $main-color-red;
         color: $main-color-red;
-        background-color: #fff;
     }
+
+    .calendar--active-first {
+        @include calendar-active-days;
+    }
+
+    .calendar--active-last {
+        box-shadow: -10px 0 0 $main-color-red,
+                    -15px 0 0 $main-color-red;
+    }
+
+    .calendar--active {
+        @include calendar-active-days;
+        color: $main-color-white;
+        background: $main-color-red;
+        border-color: $main-color-red;
+        border-radius: 0;
+        
+        &:hover {
+            background: #fff;
+            color: $main-font-color;
+        }
+    }
+
+
+    li:nth-of-type(7n + 1) {
+        border-radius:  $radius-circle;
+    }
+
+    li:nth-of-type(7n) {
+        box-shadow: none;
+        border-radius: $radius-circle;
+    }
+
+
+
+
 }
 
 

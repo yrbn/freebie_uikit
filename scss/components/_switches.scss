@@ -13,7 +13,7 @@
             top: 10px;
             font-family: $global-font-icon;
             font-size: 30px;
-            color: #fff;
+            color: $main-color-white;
         }
 
         &:before {
@@ -63,7 +63,7 @@
         margin-left: 15px;
         line-height: 50px;
         font-size: 20px;
-        color: #fff;
+        color: $main-color-white;
         text-transform: uppercase;
     }
 
@@ -72,7 +72,7 @@
         margin-right: 15px;
         line-height: 50px;
         font-size: 20px;
-        color: #fff;
+        color: $main-color-white;
         text-transform: uppercase;
     }
 
@@ -84,7 +84,7 @@
         height: 44px;
         width: 44px;
         border-radius: 5px;
-        background-color: #fff;
+        background-color: $main-color-white;
         z-index: 10;
         transition: .4s;
         }
@@ -95,6 +95,6 @@
     }
 
     .slider--rounded:before {
-        border-radius: 50%;
+        border-radius: $radius-circle;
     }
 }

@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
     <link rel="stylesheet" href="css/app.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700,700italic,600italic,600,400italic,300,300italic,200italic,200' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700,700italic,600italic,600,400italic,300,300italic,200italic,200" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -31,10 +31,14 @@
                     </nav>
 
                     <div class="header__profile">
-                        <a href="#" class="icon -bell"></a>
-                        <a href="#" class="icon -comment"></a>
+                        <a href="#" class="icon -bell">
+                            <span class="profile__notification">4</span>
+                        </a>
+                        <a href="#" class="icon -comment">
+                            <span class="profile__notification">14</span>
+                        </a>
                         <a href="#">
-                            <img src="../img/ava.png" alt="ava">
+                            <img src="./img/ava.png" alt="ava">
                         </a>
                     </div>
 
@@ -58,27 +62,27 @@
                 <!-- SWITCHES -->
 
                 <div class="group">
-                    <div class='switch-round'>
+                    <div class="switch-round">
                         <label class="switch">
                             <input type="checkbox">
                             <div class="switch-slider slider--rounded">
-                                <span class='switch-on'>on</span>
-                                <span class='switch-off'>off</span>
+                                <span class="switch-on">on</span>
+                                <span class="switch-off">off</span>
                             </div>
                         </label>
     
                         <label class="switch">
                             <input type="checkbox" checked>
                             <div class="switch-slider slider--rounded">
-                                <span class='switch-on'>on</span>
-                                <span class='switch-off'>off</span>
+                                <span class="switch-on">on</span>
+                                <span class="switch-off">off</span>
                             </div>
                         </label>
                     </div>
                 </div>
 
                 <div class="group">
-                    <div class='switch-square'>
+                    <div class="switch-square">
                         <label class="switch">
                         <input type="radio" id="rb-1" name="rb">
                         <div class="switch-slider"></div>
@@ -118,7 +122,7 @@
                         <label for="cb-4" class="checkbox-text">Hover</label>
                     </div>   
 
-                    <div class="checkboxes checkboxes checkboxes--rounded">
+                    <div class="checkboxes checkboxes--rounded">
                         <input type="checkbox" value="None" id="cb-7" name="check">
                         <label for="cb-7" class="checkbox-label"></label>
                         <label for="cb-7" class="checkbox-text">Hover</label>
@@ -132,7 +136,7 @@
                         <label for="cb-5" class="checkbox-text">Selected</label>
                     </div>  
 
-                    <div class="checkboxes checkboxes checkboxes--rounded">
+                    <div class="checkboxes checkboxes--rounded">
                         <input type="checkbox" value="None" id="cb-8" name="check" checked>
                         <label for="cb-8" class="checkbox-label"></label>
                         <label for="cb-8" class="checkbox-text">Selected</label>
@@ -184,7 +188,11 @@
 
                 </div>
 
-                <div class="select" style="z-index: 10">
+
+
+                <!-- DROPPABLE MENU -->
+
+                <div class="select select--primary">
 
                     <input class="select__input" id="select-1" type="checkbox" name="menu">
                     <div class="select__header">Select Something</div>
@@ -196,10 +204,6 @@
                     </div>
 
                 </div>
-
-
-
-                <!-- DROPDOWN LIST -->
 
                 <div class="select">
 
@@ -287,7 +291,7 @@
                 <div class="actor">
                     
                     <a href="#" class="actor__photo">
-                        <img src="../img/photo.png" alt="photo">
+                        <img src="./img/photo.png" alt="photo">
                     </a>
 
                     <h1>Emma Stone</h1>
@@ -331,13 +335,13 @@
                     </div>
                     
                     <div id="my-slider-2" se-min="0" se-step="1" se-max="100" class="slider2">
-                        <div class="slider2__left-thumb">
+                        <div class="slider2__left-thumb js-slider2__left-thumb">
                             <span></span>
                         </div>
-                        <div class="slider2__right-thumb">
+                        <div class="slider2__right-thumb js-slider2__right-thumb">
                             <span></span>
                         </div>
-                        <div class="slider2__line">
+                        <div class="slider2__line js-slider2__line">
                             <span></span>
                         </div>
                         <span class="slider2__value">0</span>

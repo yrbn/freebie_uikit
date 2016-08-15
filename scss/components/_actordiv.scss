@@ -15,12 +15,10 @@
 		font-size: 34px;
 		color: #333333;
 		font-weight: normal;
-		outline: 1px solid red;
 	}
 
 	p {
 		font-size: 26px;
-		outline: 1px solid red;
 	}
 }
 
@@ -28,7 +26,7 @@
 	float: left;
 	margin: 25px;
 	margin-left: 0;
-	border-radius: 50%;
+	border-radius: $radius-circle;
 }
 
 
@@ -38,18 +36,19 @@
 	bottom: 0;
 	padding: 15px 0;
 	font-size: 28px;
-	text-align: center;
-	color: #fff;
+	color: $main-color-white;
 
 	&:hover {
 		opacity: 0.75;
 	}
 
 	.icon {
-		display: inline-block;
-		padding: 0;
-		font-size: 30px;
-		outline: 1px solid red;
+		display: block;
+		float: left;
+		margin-left: 50px;
+		margin-right: 5px;
+		margin-top: -2px;
+		font-size: 34px;
 	}
 }
 
