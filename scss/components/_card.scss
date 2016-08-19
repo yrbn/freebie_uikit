@@ -1,15 +1,14 @@
 
 
 
-/* DIV WITH ACTORS STYLED */
+/* CARD STYLED */
 
-.actor {
-	position: relative;
+.card {
 	border: 1px solid #d6d6d6;
 	border-radius: 5px;
-	margin: 50px 0;
+	margin: 40px 0;
 	padding: 0 25px;
-	padding-bottom: 70px;
+	overflow: hidden;
 
 	h1 {
 		font-size: 34px;
@@ -22,53 +21,52 @@
 	}
 }
 
-.actor__photo {
+.card__photo {
 	float: left;
 	margin: 25px;
 	margin-left: 0;
 	border-radius: $radius-circle;
 }
 
+.card__buttons {
+	margin: 0 -25px;
+}
 
-.actor__button {
+.card__button {
 	display: block;
-	position: absolute;
-	bottom: 0;
+	float: left;
+	width: 33.3333%;
+	margin-top: 25px;
 	padding: 15px 0;
-	font-size: 28px;
+	text-align: center;
+	font-size: 24px;
 	color: $main-color-white;
+
+	span:before {
+		font-size: 30px;
+		vertical-align: middle;
+		padding-right: 5px;
+	}
+
 
 	&:hover {
 		opacity: 0.75;
 	}
-
-	.icon {
-		display: block;
-		float: left;
-		margin-left: 50px;
-		margin-right: 5px;
-		margin-top: -2px;
-		font-size: 34px;
-	}
 }
 
 .button--fav {
-	left: 0;
-	width: 33.1%;
 	border-radius: 0 0 0 5px;
 	background:$main-color-green;
+	border-right: 1px solid $main-color-white;
 }
 
 .button--friends {
-	left: 33.3%;
-	width: 33.2%;
 	background:$main-color-red;
+	border-right: 1px solid $main-color-white;
 
 }
 
 .button--views {
-	right: 0;
-	width: 33.2%;
 	border-radius: 0 0 5px 0;
 	background:$main-color-blue;
 }

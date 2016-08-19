@@ -2,44 +2,43 @@
 
 /* BASIC CHECKBOX STYLE  */
 
-.checkboxes {
+.checkbox {
     position: relative;
-    margin: 20px;
+    margin-bottom: 25px;
     margin-left: 50px;
-    margin-top: 10px;
+    user-select: none;
 
-    .checkbox-label {
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 1px solid #dedede;
-
-        &:hover {
-            border: 1px solid $main-color-green;
-        }
-    }
-
-    .checkbox-text {
-        position: absolute;
+    .checkbox__label {
         font-size: 26px;
-        margin-left: 35px;
+        margin-left: 40px;
         cursor: pointer;
+        
+        &:before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: absolute;
+            left: 0;
+            border: 1px solid #dedede;
+        }  
     }
 
 
     [type=checkbox] {
         visibility: hidden;
 
-        &:checked + label:after {
+        &:checked + .checkbox__label:after {
             opacity: 1;
         }   
 
-        &:checked + label {
+        &:checked + .checkbox__label:before {
         	border: 1px solid $main-color-green;
         	background: #edfdca;
+        }
+
+        &:hover + .checkbox__label:before  {
+            border-color: $main-color-green;
         }
     }
 }
@@ -48,15 +47,18 @@
 
 /* SQUARE CHECKBOX STYLE  */
 
-.checkboxes--squared .checkbox-label {
-    border-radius: 5px;
+.checkbox--squared label {
+
+    &:before {
+        border-radius: 5px;
+    }
 
     &:after {
         content: '';
-        width: 13px;
-        height: 7px;
+        width: 16px;
+        height: 10px;
         position: absolute;
-        top: 7px;
+        top: 25px;
         left: 7px;
         border: 3px solid $main-color-green;
         border-top: none;
@@ -70,18 +72,20 @@
 
 /* ROUNDED CHECKBOX STYLE  */
 
-.checkboxes--rounded label{
-    margin-top: 40px;
-    border-radius: $radius-circle;
+.checkbox--rounded label {
+
+    &::before {
+        border-radius: $radius-circle; 
+    }
 
     &:after {
         content: '';
-        top: 4px;
+        position: absolute;
+        top: 22px;
         left: 4px;
         width: 22px;
         height: 22px;
         border-radius: $radius-circle;
-        position: absolute;
 
         background: $main-color-green;
         opacity: 0;

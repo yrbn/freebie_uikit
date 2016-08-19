@@ -59,21 +59,21 @@
         border-radius: 5px;
         transition: .4s;
 
-    .switch-on {
-        margin-left: 15px;
+    .switch-on, 
+    .switch-off {
         line-height: 50px;
-        font-size: 20px;
         color: $main-color-white;
         text-transform: uppercase;
+        user-select: none;
+    }
+    
+    .switch-on {
+        margin-left: 15px;
     }
 
     .switch-off {
         float: right;
-        margin-right: 15px;
-        line-height: 50px;
-        font-size: 20px;
-        color: $main-color-white;
-        text-transform: uppercase;
+        margin-right: 10px;
     }
 
     &:before {

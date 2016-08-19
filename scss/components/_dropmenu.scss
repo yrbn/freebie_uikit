@@ -11,9 +11,8 @@
 
 		position: relative;
 		display: inline-block;
-		width: 20px;
+		width: 70px;
 		padding: 29px 20px;
-		right: 3px;
 
 		cursor: pointer;
 		background: #f6f6f6;
@@ -26,6 +25,7 @@
 		    position: absolute;
 		    display: block;
 		    top: 50%;
+		    left: 35%;
 
 		    border: 10px solid transparent;
 		    border-top-color: #bfbfbf;
@@ -72,7 +72,7 @@
 	border: 1px solid #c9c9c9;
 	border-radius: 0 0 5px 5px;
 	border-top: none;
-	width: 452px;
+	width: 424px;
 
 	a {
 		display: block;

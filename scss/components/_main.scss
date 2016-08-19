@@ -3,6 +3,9 @@
 
 /* MAIN SETTINGS */
 
+*, *:after, *:before {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;

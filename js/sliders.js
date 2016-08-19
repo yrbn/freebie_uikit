@@ -1,4 +1,21 @@
-// THIS IS THE RANGE SLIDER LOGIC DO NOT CHANGE !!
+
+/* SLIDER 1 */
+
+function slider1() {
+    var rng1 = document.querySelector('#my-slider-1'),
+        value = rng1.value,
+        sliderValue = document.querySelector('.js-slider-1__value');
+
+        sliderValue.style.left = (value * 0.94) + '%';
+        sliderValue.innerHTML = rng1.value;
+}
+
+
+
+
+
+/* SLIDER 2 */
+
 var RangeSlider = function(id) { 
   var self = this,
       startX = 0, 
@@ -35,7 +52,6 @@ var RangeSlider = function(id) {
   // initial reset
   self.reset();
   
-  // usefull values, min, max, normalize fact is the width of both touch buttons
   var normalizeFact = 12;
   var maxX = slider.offsetWidth - touchRight.offsetWidth;
   var selectedTouch = null;

@@ -3,21 +3,17 @@
 
 /* LOGIN FORM STYLE */
 
-.login {
-	width: 455px;
+.form {
 	margin: 55px 40px;
-
-	h2 { 
-		font-size: 26px;
-	}
 }
 
-.login__header {
+.form__header {
 	margin-top: 0;
 	margin-bottom: 0;
+	font-size: 26px;
 }
 
-.login__header {
+.form__header {
 	background: #f6f5f6;
 	padding: 20px 40px;
 	font-weight: bold;
@@ -27,8 +23,7 @@
 	border-radius: 5px 5px 0 0;
 }
 
-.login__container {
-
+.form__container {
 	position: relative;
 	background: $main-color-white;
 	border: 1px solid #c7c6cb;
@@ -52,9 +47,8 @@
 	}
  }
 
-.login__email,
-.login__password,
-.login__submit {
+.form__input,
+.form__submit {
 	box-sizing: border-box;
 	display: block;  
 	outline: 0;
@@ -63,20 +57,19 @@
 	border: 1px solid #d5d5d5;
 }
 
-.login__email,
-.login__password {
+.form__input {
 	position: relative;
 	width: 100%;
 	padding: 20px 70px;
 	color: #333333;
 }
 
-.login__password {
+.form__password {
 	margin-top: 20px;
 	margin-bottom: 25px;
 }
 
-.login__submit {
+.form__submit {
 	padding: 20px 55px;
 	float: right;
 	background: $main-color-blue;
@@ -90,24 +83,24 @@
 }
 
 
-.login__email:focus,
-.login__password:focus {
+.form__email:focus,
+.form__password:focus {
 	border-color: $main-color-blue;
 }
 
-.login__email:focus + .-login {
+.form__email:focus + .-login {
 	color: $main-color-blue;
 }
 
-.login__password:focus + .-password {
+.form__password:focus + .-password {
 	color: $main-color-blue;
 }
 
-.login input[type="submit"]:hover {
+.form input[type="submit"]:hover {
 	background: #4188c4;
 }
 
-.login__submit:focus {
+.form__submit:focus {
 	position: relative;
 	top: 1px;
 	left: 1px;

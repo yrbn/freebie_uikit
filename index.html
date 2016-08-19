@@ -32,10 +32,10 @@
 
                     <div class="header__profile">
                         <a href="#" class="icon -bell">
-                            <span class="profile__notification">4</span>
+                            <span class="counter">4</span>
                         </a>
                         <a href="#" class="icon -comment">
-                            <span class="profile__notification">14</span>
+                            <span class="counter">14</span>
                         </a>
                         <a href="#">
                             <img src="./img/ava.png" alt="ava">
@@ -84,12 +84,12 @@
                 <div class="group">
                     <div class="switch-square">
                         <label class="switch">
-                        <input type="radio" id="rb-1" name="rb">
+                        <input type="checkbox">
                         <div class="switch-slider"></div>
                     </label>
 
                     <label class="switch">
-                        <input type="radio" id="rb-1" name="rb" checked>
+                        <input type="checkbox" checked>
                         <div class="switch-slider"></div>
                         </label>
                     </div>
@@ -101,45 +101,39 @@
 
                 <div class="group">
                 
-                    <div class="checkboxes checkboxes--squared">
+                    <div class="checkbox checkbox--squared">
                         <input type="checkbox" value="None" id="cb-3" name="check">
-                        <label for="cb-3" class="checkbox-label"></label>
-                        <label for="cb-3" class="checkbox-text">Default</label>
+                        <label for="cb-3" class="checkbox__label">Default</label>
                     </div>  
 
-                    <div class="checkboxes checkboxes checkboxes--rounded">
+                    <div class="checkbox checkbox--rounded">
                         <input type="checkbox" value="None" id="cb-6" name="check">
-                        <label for="cb-6" class="checkbox-label"></label>
-                        <label for="cb-6" class="checkbox-text">Default</label>
-                    </div>
+                        <label for="cb-6" class="checkbox__label">Default</label>
+                     </div>
                 </div>
 
                 <div class="group">
 
-                    <div class="checkboxes checkboxes--squared">
+                    <div class="checkbox checkbox--squared">
                         <input type="checkbox" value="None" id="cb-4" name="check">
-                        <label for="cb-4" class="checkbox-label"></label>
-                        <label for="cb-4" class="checkbox-text">Hover</label>
+                        <label for="cb-4" class="checkbox__label">Hover</label>
                     </div>   
 
-                    <div class="checkboxes checkboxes--rounded">
+                    <div class="checkbox checkbox--rounded">
                         <input type="checkbox" value="None" id="cb-7" name="check">
-                        <label for="cb-7" class="checkbox-label"></label>
-                        <label for="cb-7" class="checkbox-text">Hover</label>
+                        <label for="cb-7" class="checkbox__label">Hover</label>
                     </div>
                 </div>
 
                 <div class="group">
-                    <div class="checkboxes checkboxes--squared">
+                    <div class="checkbox checkbox--squared">
                         <input type="checkbox" value="None" id="cb-5" name="check" checked>
-                        <label for="cb-5" class="checkbox-label"></label>
-                        <label for="cb-5" class="checkbox-text">Selected</label>
+                        <label for="cb-5" class="checkbox__label">Selected</label>
                     </div>  
 
-                    <div class="checkboxes checkboxes--rounded">
+                    <div class="checkbox checkbox--rounded">
                         <input type="checkbox" value="None" id="cb-8" name="check" checked>
-                        <label for="cb-8" class="checkbox-label"></label>
-                        <label for="cb-8" class="checkbox-text">Selected</label>
+                        <label for="cb-8" class="checkbox__label">Selected</label>
                     </div>
                 </div>
 
@@ -172,18 +166,18 @@
 
 
 
-                <!-- LOGIN FORM -->
+                <!-- FORM -->
 
-                <div class="login">
+                <div class="form">
   
-                    <h2 class="login__header">Sign in</h2>
+                    <p class="form__header">Sign in</p>
 
-                    <form class="login__container">
-                        <input type="email" class="login__email" id="login" placeholder="Email">
+                    <form class="form__container">
+                        <input type="email" class="form__input form__email" id="login" placeholder="Email">
                         <label for="login" class="icon -login"></label>
-                        <input type="password" class="login__password" id="password" placeholder="Password">
+                        <input type="password" class="form__input form__password" id="password" placeholder="Password">
                         <label for="password" class="icon -password"></label>
-                        <input type="submit" class="login__submit" value="sign in">
+                        <input type="submit" class="form__submit" value="sign in">
                     </form>
 
                 </div>
@@ -286,11 +280,11 @@
 
 
 
-                <!-- ACTORS DIV  -->
+                <!-- CARD DIV  -->
 
-                <div class="actor">
+                <div class="card">
                     
-                    <a href="#" class="actor__photo">
+                    <a href="#" class="card__photo">
                         <img src="./img/photo.png" alt="photo">
                     </a>
 
@@ -298,20 +292,19 @@
 
                     <p>The Amazing Spider-Man, Gangster Squad, The Croods</p>
                     
-                    <a class="actor__button button--fav" href="#">
-                        <span class="icon -fav"></span>
-                        172
-                    </a>
-
-                    <a class="actor__button button--friends" href="#">
-                        <span class="icon -friends"></span>
-                        34
-                    </a>
-
-                    <a class="actor__button button--views" href="#">
-                        <span class="icon -views"></span>
-                        210
-                    </a>
+                    <div class="card__buttons">
+                        <a class="card__button button--fav" href="#">
+                            <span class="icon -fav">172</span> 
+                        </a>
+                        
+                        <a class="card__button button--friends" href="#">
+                            <span class="icon -friends">34</span>
+                        </a>
+                        
+                        <a class="card__button button--views" href="#">
+                            <span class="icon -views">210</span>    
+                        </a>
+                    </div>
 
                 </div>
 
@@ -324,14 +317,9 @@
                 <!-- SLIDERS -->
                 
                 <div class="sliders">
-                    <div id="my-slider-1" se-min="0" se-step="1" se-max="100" class="slider1">
-                        <div class="slider1__thumb">
-                            <span></span>
-                            <div class="slider1__value">30</div>
-                        </div>
-                        <div class="slider1__line">
-                            <span></span>
-                        </div>
+                    <div class="slider slider-1">
+                        <input type="range" id="my-slider-1" value="30" oninput="slider1()">
+                        <div class="js-slider-1__value slider-1__value">0</div>
                     </div>
                     
                     <div id="my-slider-2" se-min="0" se-step="1" se-max="100" class="slider2">
@@ -378,7 +366,7 @@
     </div>
     
 
-    <script src="js/slider2.js"></script>
+    <script src="js/sliders.js"></script>
 </body>
 
 </html>
