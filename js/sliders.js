@@ -1,17 +1,14 @@
 
 /* SLIDER 1 */
 
-function slider1() {
+var slider1 = function () {
     var rng1 = document.querySelector('#my-slider-1'),
         value = rng1.value,
         sliderValue = document.querySelector('.js-slider-1__value');
 
-        sliderValue.style.left = (value * 0.94) + '%';
+        sliderValue.style.left = (value * 0.945) + '%';
         sliderValue.innerHTML = rng1.value;
 }
-
-
-
 
 
 /* SLIDER 2 */
@@ -158,7 +155,6 @@ var RangeSlider = function(id) {
     var minValue = minValue * (max - min) + min - 2;
     var maxValue = maxValue * (max - min) + min - 2;
     
-    console.log(step);
     if (step !== 0.0) {
       var multi = Math.floor((minValue / step));
       minValue = step * multi;
@@ -178,8 +174,6 @@ var RangeSlider = function(id) {
   touchRight.addEventListener('touchstart', onStart);
   
 };
-
-
 
 var newRangeSlider2 = new RangeSlider('my-slider-2');
 
